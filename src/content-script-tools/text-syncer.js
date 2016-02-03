@@ -31,6 +31,8 @@ class TextSyncer {
     };
   }
 
+  // postMessageでPubSub的な実装をしている。
+  // ここで送信したものがmakeMessageHandlerで受け取られる
   makeTextChangeHandler(port, textElem) {
     return () => {
       port.postMessage({

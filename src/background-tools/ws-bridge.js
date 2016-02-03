@@ -10,7 +10,10 @@ class WSBridge {
   }
 
   makeWS(port, queue) {
+    // WebSocket...?
+    // これはAtom package側も読まないとわからなそう
     const ws = new WebSocket(WS_URL);
+    
     ws.onopen = () => {
       while (queue.length > 0) {
         ws.send(queue.shift());

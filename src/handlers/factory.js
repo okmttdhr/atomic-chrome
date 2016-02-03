@@ -1,3 +1,4 @@
+// ハンドラーという概念で要素を操作、ある意味コンポーネント化しているのか
 class HandlerFactory {
   constructor() {
     this.handlers = [];

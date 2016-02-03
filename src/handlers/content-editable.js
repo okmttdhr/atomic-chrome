@@ -34,4 +34,5 @@ class ContentEditableHandler extends BaseHandler {
   }
 }
 
+// newしてexportすればいいのかー
 export default new ContentEditableHandler();
