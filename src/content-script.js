@@ -3,6 +3,8 @@ import {textSyncer, TextElement} from './content-script-tools';
 
 function run() {
   const title = document.title;
+
+  // fucus中の要素を取得できる
   const activeElement = document.activeElement;
 
   const handler = handlerFactory.handlerFor(activeElement);

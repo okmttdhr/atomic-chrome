@@ -5,6 +5,8 @@ export default class TextElement {
   }
 
   set value(value) {
+    // handlersを使用。
+    // activeな方のエレメントにバリューをセットする。
     this.handler.setValue(this.elem, value);
   }
 

@@ -1,3 +1,4 @@
+// このアプリケーションでは、こいつをextendsしてハンドラーを作成している　
 export default class BaseHandler {
   canHandle() {
     return false;
